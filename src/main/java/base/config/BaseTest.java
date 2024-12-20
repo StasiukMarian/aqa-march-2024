@@ -22,7 +22,8 @@ public class BaseTest {
         // https://www.stats.govt.nz/large-datasets/csv-files-for-download/ - URL TO DOWNLOAD FILE
         // https://ps.uci.edu/~franklin/doc/file_upload.html - URL TO UPLOAD FILE
         // https://checkcps.com/double-click/ - URL TO DOUBLE CLICK
-        Selenide.open("https://owu.com.ua/");
+        // https://faculty.washington.edu/chudler/java/boxes.html - URL WITH CHECKBOXES
+        Selenide.open("https://faculty.washington.edu/chudler/java/boxes.html");
     }
 
 //    @AfterMethod
