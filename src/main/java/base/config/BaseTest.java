@@ -2,10 +2,12 @@ package base.config;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.testng.TextReport;
 import org.testng.annotations.*;
 
+@Listeners({TextReport.class})
 public class BaseTest {
-    @BeforeClass
+    @BeforeTest
     public void configuration() {
         Configuration.browser = "chrome";
         Configuration.browserSize = "1280x920";
@@ -33,7 +35,7 @@ public class BaseTest {
 //        Selenide.open("about:blank");
 //    }
 //
-//    @AfterClass
+//    @AfterTest
 //    public void tearDown() {
 //        Selenide.closeWebDriver();
 //    }

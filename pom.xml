@@ -14,20 +14,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <testng>7.10.2</testng>
         <selenide>7.6.1</selenide>
+        <slf4j>2.0.16</slf4j>
+        <logback>1.5.15</logback>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>${testng}</version>
-            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -36,6 +32,24 @@
             <version>${selenide}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide-testng</artifactId>
+            <version>${selenide}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 </project>
