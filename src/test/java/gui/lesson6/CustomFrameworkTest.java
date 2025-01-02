@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 
 import static base.Pages.*;
 import static base.custom.Constants.*;
-import static com.codeborne.selenide.Selenide.$;
 
 public class CustomFrameworkTest extends BaseTest {
     @Test
@@ -14,7 +13,7 @@ public class CustomFrameworkTest extends BaseTest {
         loginPage().typeUsername(USERNAME);
         loginPage().typePassword(PASSWORD);
         loginPage().clickLoginButton();
-        $("asd").click();
+
 //        mainPage().clickBurgerMenuButton();
 //        mainPage().clickBurgerMenuItemByText("About");
 

@@ -2,9 +2,7 @@ package base.config;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.logevents.SelenideLogger;
 import com.codeborne.selenide.testng.TextReport;
-import io.qameta.allure.selenide.AllureSelenide;
 import org.testng.annotations.*;
 
 @Listeners({TextReport.class})
@@ -19,10 +17,6 @@ public class BaseTest {
         Configuration.headless = false;
         Configuration.screenshots = true;
         Configuration.savePageSource = false;
-
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
-                .screenshots(true)
-                .savePageSource(false));
     }
 
     @BeforeMethod
