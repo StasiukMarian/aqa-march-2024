@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="First test suite">
-    <test name="group test">
-        <groups>
-            <run>
-                <include name="test group"/>
-            </run>
-        </groups>
+<suite name="Regression suite">
+    <test name="Order">
+
         <packages>
-            <package name="gui.lesson1"/>
+            <package name="gui.lesson6.*"/>
         </packages>
         <!--    <test name="regression tests">-->
         <!--                <packages>-->
