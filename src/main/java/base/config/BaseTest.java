@@ -13,10 +13,10 @@ public class BaseTest {
     public void configuration() {
         Configuration.browser = "chrome";
         Configuration.browserSize = "1280x920";
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
         Configuration.timeout = 10000;
         Configuration.pageLoadTimeout = 10000;
-        Configuration.headless = false;
+        Configuration.headless = true;
         Configuration.screenshots = true;
         Configuration.savePageSource = false;
 
@@ -35,16 +35,16 @@ public class BaseTest {
         Selenide.open("https://www.saucedemo.com/");
     }
 
-//    @AfterMethod
-//    public void cleanWebDriver() {
-//        Selenide.clearBrowserCookies();
-//        Selenide.refresh();
-//        Selenide.open("about:blank");
-//    }
-//
-//    @AfterTest
-//    public void tearDown() {
-//        Selenide.closeWebDriver();
-//    }
+    @AfterMethod
+    public void cleanWebDriver() {
+        Selenide.clearBrowserCookies();
+        Selenide.refresh();
+        Selenide.open("about:blank");
+    }
+
+    @AfterTest
+    public void tearDown() {
+        Selenide.closeWebDriver();
+    }
 
 }
