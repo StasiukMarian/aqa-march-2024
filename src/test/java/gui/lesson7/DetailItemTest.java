@@ -24,6 +24,6 @@ public class DetailItemTest extends BaseTest {
 
         Item detailedItem = detailItemPage().getDetailedItem();
 
-        Assert.assertFalse(itemsList.contains(detailedItem), "List " + itemsList + " does not contains detailed item " + detailedItem);
+        Assert.assertTrue(itemsList.contains(detailedItem), "List " + itemsList + " does not contains detailed item " + detailedItem);
     }
 }
