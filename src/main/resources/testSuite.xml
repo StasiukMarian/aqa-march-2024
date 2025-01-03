@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression suite">
-    <test name="Order">
-
+    <test name="Detail item test">
         <packages>
-            <package name="gui.lesson6.*"/>
+            <package name="gui.lesson7.*"/>
         </packages>
-        <!--    <test name="regression tests">-->
-        <!--                <packages>-->
-        <!--                    <package name="gui.lesson1.*"/>-->
-        <!--                </packages>-->
-        <!--    </test>-->
     </test>
 </suite>
