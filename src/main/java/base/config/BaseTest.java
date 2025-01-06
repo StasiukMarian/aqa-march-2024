@@ -32,6 +32,12 @@ public class BaseTest {
         // https://ps.uci.edu/~franklin/doc/file_upload.html - URL TO UPLOAD FILE
         // https://checkcps.com/double-click/ - URL TO DOUBLE CLICK
         // https://faculty.washington.edu/chudler/java/boxes.html - URL WITH CHECKBOXES
+
+        //"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_iframe" - iframe
+        // https://demoqa.com/progress-bar
+        // https://demoqa.com/alerts
+        // http://uitestingplayground.com/shadowdom
+
         Selenide.open("https://www.saucedemo.com/");
     }
 
