@@ -37,7 +37,7 @@ public class BaseTest {
         // https://demoqa.com/progress-bar
         // https://demoqa.com/alerts
         // http://uitestingplayground.com/shadowdom
-
+        //https://petstore.swagger.io/v2/pet/findByStatus?status=available
         Selenide.open("https://www.saucedemo.com/");
     }
 
